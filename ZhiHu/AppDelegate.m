@@ -2,12 +2,12 @@
 //  AppDelegate.m
 //  ZhiHu
 //
-//  Created by New on 2020/7/22.
+//  Created by New on 2020/7/21.
 //  Copyright © 2020 Godlowd. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+        ViewController *vc = ViewController.new;
+    vc.container = delegate.persistentContainer;
+//    }
+//    NSLog(@"yesssss");
     // Override point for customization after application launch.
     return YES;
 }
