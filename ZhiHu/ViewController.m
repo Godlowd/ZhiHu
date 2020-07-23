@@ -25,7 +25,12 @@
     [self getPersistentContainer];
     [self pageInit];
 //    [self contentInit];
+    
     [self commentInit];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.page.comment setCommentCell];
+    });
+
 //    [self searchInfo];
 //    [self test];
 //    [self storeComment];
@@ -89,27 +94,36 @@
 
 -(void)commentInit{
     Comment *comment = [[Comment alloc] initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height * 0.4)];
+    comment.backgroundColor = UIColor.yellowColor;
     NSBlockOperation *fetch = [NSBlockOperation blockOperationWithBlock:^{
         [comment fetchZhiHuComment];
     }];
     self.page.comment = comment;
+    [self.page addSubview:self.page.comment];
+    self.page.comment.delegate = self;
+    
+    [self.page.comment mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.and.right.equalTo(self.view);
+        make.bottom.equalTo(self.view.mas_bottom);
+        make.height.equalTo(self.view.mas_height).multipliedBy(0.3);
+    }];
     //2.任务二：打水印
     NSBlockOperation *storeComment = [NSBlockOperation blockOperationWithBlock:^{
         [self storeComment];
     }];
 
     //3.任务三：上传图片
-    NSBlockOperation *setCommentCell = [NSBlockOperation blockOperationWithBlock:^{
-        [self search];
-    }];
+//    NSBlockOperation *setCommentCell = [NSBlockOperation blockOperationWithBlock:^{
+//
+//    }];
 
     //4.设置依赖
     [storeComment addDependency:fetch];      //任务二依赖任务一
-    [setCommentCell addDependency:storeComment];      //任务三依赖任务二
+//    [setCommentCell addDependency:storeComment];      //任务三依赖任务二
 
     //5.创建队列并加入任务
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    [queue addOperations:@[setCommentCell, storeComment, fetch] waitUntilFinished:NO];
+    [queue addOperations:@[storeComment, fetch] waitUntilFinished:NO];
     
 }
 
@@ -134,6 +148,7 @@
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
 }
 -(void)search{
+    
     // 初始化一个查询请求
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     // 设置要查询的实体

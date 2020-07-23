@@ -22,6 +22,74 @@
 
 
 -(void)setCommentCell{
+    NSLog(@"start to set cell");
+    _container = [[UIView alloc] init];
+    [self addSubview:_container];
+    [_container mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self);
+        make.width.equalTo(self);
+    }];
+    _container.backgroundColor = UIColor.lightGrayColor;
+    self.scrollEnabled = true;
+    __strong UIView *lastView = nil;
+    if (self.commentArray.count == 0) {
+        NSLog(@"没有数据!");
+        return;
+    }
+    for (NSUInteger num = 0; num < self.commentArray.count; num++) {
+        CommentCell *cell = [[CommentCell alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
+        UserComment *user = [self.commentArray objectAtIndex:num];
+        cell.author.text = user.name;
+        cell.content.text = user.content;
+        cell.backgroundColor = UIColor.whiteColor;
+        [_container addSubview:cell];
+        [cell mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.and.right.equalTo(self.container);
+//            make.height.equalTo(self.mas_height).multipliedBy(0.25);
+            if (!lastView) {
+                make.top.mas_equalTo(0);
+            }
+            else{
+                make.top.mas_equalTo(lastView.mas_bottom);
+            }
+        }];
+        
+        lastView = cell;
+    }
+//    for (UserComment *user in self.commentArray) {
+//        CommentCell *cell = [[CommentCell alloc] initWithFrame:CGRectMake(0, 0, 50, 20)];
+//        cell.author.text = user.name;
+//        cell.content.text = user.content;
+//        cell.backgroundColor = UIColor.redColor;
+//        [_container addSubview:cell];
+//        [cell mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.left.and.right.equalTo(_container);
+//            make.height.equalTo(_container.mas_height).multipliedBy(0.25);
+//            if (!lastView) {
+//                make.top.equalTo(0);
+//            }
+//            else{
+//                make.top.equalTo(lastView.mas_bottom);
+//            }
+//        }];
+//
+//        lastView = cell;
+//
+////        if (!lastView) {
+////            [_container mas_updateConstraints:^(MASConstraintMaker *make) {
+////                make.bottom.equalTo(self.mas_bottom);
+////            }];
+////    }
+//}
+    if (lastView) {
+           [_container mas_makeConstraints:^(MASConstraintMaker *make) {
+             make.bottom.equalTo(lastView.mas_bottom);
+         }];
+    }
+    else{
+        NSLog(@"failed");
+    }
+ 
 //
 //    _container = [[UIView alloc] initWithFrame:UIScreen.mainScreen.bounds];
 //    [self addSubview:_container];
@@ -116,13 +184,5 @@
 -(void)fetchZhiHuComment3{
     NSLog(@"find");
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end
