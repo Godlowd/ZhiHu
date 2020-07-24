@@ -11,7 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Content : UIScrollView
+@property(nonatomic, strong) UILabel *content;
+@property(nonatomic, strong) UIView *container;
 
+-(void)fetchZhiHu;
+-(void)setArticle;
 @end
 
 NS_ASSUME_NONNULL_END
