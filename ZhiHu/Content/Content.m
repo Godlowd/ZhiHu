@@ -24,9 +24,10 @@
         make.edges.equalTo(self);
         make.width.equalTo(self);
     }];
-     _container.backgroundColor = UIColor.lightGrayColor;
+    _container.backgroundColor = UIColor.whiteColor;
     self.content.numberOfLines = 0;
     self.content.lineBreakMode = NSLineBreakByWordWrapping;
+    self.content.font = [UIFont systemFontOfSize:20];
     self.scrollEnabled = YES;
     [self.container addSubview:self.content];
     [self.content mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -44,7 +45,8 @@
 
              }
              success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSAttributedString * attrStr = [[NSAttributedString alloc] initWithData:[[responseObject valueForKey:@"body"] dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+        self.text = [responseObject valueForKey:@"body"];
+        NSAttributedString * attrStr = [[NSAttributedString alloc] initWithData:[self.text dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
         self.content.attributedText = attrStr;
 //        self.content.text = [responseObject valueForKey:@"body"];
         NSLog(@"the content is %@", self.content.text);

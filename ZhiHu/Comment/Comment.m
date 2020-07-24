@@ -56,31 +56,7 @@
         
         lastView = cell;
     }
-//    for (UserComment *user in self.commentArray) {
-//        CommentCell *cell = [[CommentCell alloc] initWithFrame:CGRectMake(0, 0, 50, 20)];
-//        cell.author.text = user.name;
-//        cell.content.text = user.content;
-//        cell.backgroundColor = UIColor.redColor;
-//        [_container addSubview:cell];
-//        [cell mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.left.and.right.equalTo(_container);
-//            make.height.equalTo(_container.mas_height).multipliedBy(0.25);
-//            if (!lastView) {
-//                make.top.equalTo(0);
-//            }
-//            else{
-//                make.top.equalTo(lastView.mas_bottom);
-//            }
-//        }];
-//
-//        lastView = cell;
-//
-////        if (!lastView) {
-////            [_container mas_updateConstraints:^(MASConstraintMaker *make) {
-////                make.bottom.equalTo(self.mas_bottom);
-////            }];
-////    }
-//}
+
     if (lastView) {
            [_container mas_makeConstraints:^(MASConstraintMaker *make) {
              make.bottom.equalTo(lastView.mas_bottom);
@@ -90,67 +66,6 @@
         NSLog(@"failed");
     }
  
-//
-//    _container = [[UIView alloc] initWithFrame:UIScreen.mainScreen.bounds];
-//    [self addSubview:_container];
-//    [_container mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.left.bottom.and.right.equalTo(self);
-//        make.width.equalTo(self);
-//    }];
-//    self.pagingEnabled =YES;
-//    UIView *lastView =nil;
-//
-//    __block CommentCell *formercell = nil;
-//    static int cellcount = -1;
-//
-//    for (UserComment *user in _commentArray) {
-//
-//        cellcount++;
-////        CommentCell *cell = [[CommentCell alloc] initWithFrame:CGRectMake(0, 50 * cellcount, self.bounds.size.width, 50)];
-////        NSLog(@"the y is %d",50 * (cellcount +1));
-////        cell.tag = cellcount;
-////        [_subcell addObject:cell];
-////        cell.author.text = user.name;
-////        cell.content.text = user.content;
-////        cell.backgroundColor = UIColor.blackColor;
-////        [self.container addSubview:cell];
-////
-////        NSLog(@"the former cell's tag is %lu",formercell.tag);
-////        [cell mas_makeConstraints:^(MASConstraintMaker *make) {
-////            make.left.and.right.equalTo(self.container);
-////            make.height.mas_equalTo(self.container.mas_height).multipliedBy(0.25);
-////            if (!formercell) {
-////                make.top.mas_equalTo(0);
-////            }
-////            else{
-////                make.top.mas_equalTo(formercell.mas_bottom);
-////        }
-////
-////            formercell = cell;
-//////            make.top.equalTo(formercell.mas_bottom);
-////        }];
-//        UILabel *label = UILabel.new;
-//        label.text = user.content;
-//        [self.container addSubview:label];
-//        [label mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.left.and.right.equalTo(self.container);
-//            make.height.mas_equalTo(self.container.mas_height).multipliedBy(0.25);
-//
-//           if (lastView)  {
-//                make.top.mas_equalTo(lastView.mas_bottom);
-//            }
-//            else  {
-//                make.top.mas_equalTo(0);
-//            }
-//        }];
-//
-//        lastView = label;
-//    }
-//
-//    [_container mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.bottom.equalTo(lastView.mas_bottom);
-//    }];
-//    [self layoutIfNeeded];
 }
 
 -(void)fetchZhiHuComment{

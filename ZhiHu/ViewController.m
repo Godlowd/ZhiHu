@@ -87,11 +87,30 @@
         [content fetchZhiHu];
     }];
     
+    NSBlockOperation *storeContent = [NSBlockOperation blockOperationWithBlock:^{
+        [self storeContent];
+    }];
+    [storeContent addDependency:fetchContent];
     
     //5.创建队列并加入任务
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    [queue addOperations:@[fetchContent,storeComment, fetch] waitUntilFinished:NO];
+    [queue addOperations:@[storeContent, fetchContent,storeComment, fetch] waitUntilFinished:NO];
     
+}
+-(void)storeContent{
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    // 传入上下文，创建一个Person实体对象
+    NSLog(@"store Content");
+    NSManagedObject *comment = [NSEntityDescription insertNewObjectForEntityForName:@"ContentDataModel" inManagedObjectContext:self.container.viewContext];
+    // 设置Person的简单属性
+    [comment setValue:self.page.content.text forKey:@"content"];
+    NSError *error = nil;
+    BOOL success = [self.container.viewContext save:&error];
+    if (!success) {
+        [NSException raise:@"访问数据库错误" format:@"%@", [error localizedDescription]];
+    }
+    dispatch_semaphore_signal(semaphore);
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
 }
 
 -(void)storeComment{

@@ -2216,6 +2216,40 @@
 			<key>uniqueIdentifier</key>
 			<string>80054B26-0597-40BA-A203-A54CBD7026F6</string>
 		</dict>
+		<key>8172B5D4-ED6F-4341-9438-9C98E1C181A6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>8172B5D4-ED6F-4341-9438-9C98E1C181A6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ZhiHu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ZhiHu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run ZhiHu</string>
+			<key>timeStartedRecording</key>
+			<real>617251766.80097401</real>
+			<key>timeStoppedRecording</key>
+			<real>617251845.63776505</real>
+			<key>title</key>
+			<string>Run ZhiHu</string>
+			<key>uniqueIdentifier</key>
+			<string>8172B5D4-ED6F-4341-9438-9C98E1C181A6</string>
+		</dict>
 		<key>8178ED56-7205-468B-B414-5AA80A4A7F35</key>
 		<dict>
 			<key>className</key>
@@ -2964,6 +2998,40 @@
 			<key>uniqueIdentifier</key>
 			<string>A84E8EE7-39F1-4E9B-A9F6-3AA71C1556C7</string>
 		</dict>
+		<key>A97260BF-1398-4A73-8D86-BD9DAB0AF97B</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>A97260BF-1398-4A73-8D86-BD9DAB0AF97B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ZhiHu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ZhiHu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run ZhiHu</string>
+			<key>timeStartedRecording</key>
+			<real>617251859.31595004</real>
+			<key>timeStoppedRecording</key>
+			<real>617252081.529387</real>
+			<key>title</key>
+			<string>Run ZhiHu</string>
+			<key>uniqueIdentifier</key>
+			<string>A97260BF-1398-4A73-8D86-BD9DAB0AF97B</string>
+		</dict>
 		<key>AA116F7B-D275-46DB-8FC5-63379C5EA7AB</key>
 		<dict>
 			<key>className</key>
@@ -3473,6 +3541,40 @@
 			<string>Run ZhiHu</string>
 			<key>uniqueIdentifier</key>
 			<string>C7716790-01AA-47BE-BC2D-FDFCCCAF6E88</string>
+		</dict>
+		<key>C7C62B63-D24E-472D-B246-7E216954C9EA</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C7C62B63-D24E-472D-B246-7E216954C9EA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ZhiHu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ZhiHu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run ZhiHu</string>
+			<key>timeStartedRecording</key>
+			<real>617252144.67969894</real>
+			<key>timeStoppedRecording</key>
+			<real>617252287.46809304</real>
+			<key>title</key>
+			<string>Run ZhiHu</string>
+			<key>uniqueIdentifier</key>
+			<string>C7C62B63-D24E-472D-B246-7E216954C9EA</string>
 		</dict>
 		<key>C9C366A5-B3F3-4ACD-BBAD-1B7BB39A1229</key>
 		<dict>
@@ -4459,6 +4561,40 @@
 			<string>Run ZhiHu</string>
 			<key>uniqueIdentifier</key>
 			<string>FEF9552F-829B-41BD-8C23-DC61C8A1A80F</string>
+		</dict>
+		<key>FF3CA033-DB15-4E82-9F8A-1D43B36F907C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>FF3CA033-DB15-4E82-9F8A-1D43B36F907C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ZhiHu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ZhiHu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run ZhiHu</string>
+			<key>timeStartedRecording</key>
+			<real>617251845.84306002</real>
+			<key>timeStoppedRecording</key>
+			<real>617251859.51686001</real>
+			<key>title</key>
+			<string>Run ZhiHu</string>
+			<key>uniqueIdentifier</key>
+			<string>FF3CA033-DB15-4E82-9F8A-1D43B36F907C</string>
 		</dict>
 	</dict>
 </dict>

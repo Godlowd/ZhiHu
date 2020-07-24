@@ -5,7 +5,11 @@
         <attribute name="avatar" optional="YES" attributeType="String"/>
         <attribute name="content" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="ContentDataModel" representedClassName="ContentDataModel" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
         <element name="CommentDataModel" positionX="-9" positionY="36" width="128" height="88"/>
+        <element name="ContentDataModel" positionX="0" positionY="72" width="128" height="58"/>
     </elements>
 </model>

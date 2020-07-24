@@ -34,7 +34,7 @@
 			<key>uniqueIdentifier</key>
 			<string>2DD9A860-C3DB-437F-BB06-3B00B855C646</string>
 		</dict>
-		<key>367D13C2-52EC-4ED1-BF85-79488E43CC36</key>
+		<key>5227FFA2-A210-443F-A150-6E89B897D5C2</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,35 +43,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.library.static</string>
 			<key>fileName</key>
-			<string>367D13C2-52EC-4ED1-BF85-79488E43CC36.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>signature</key>
-			<string>Masonry-bbbmnpgvrkfmmjgaqrufekqndaxt</string>
-			<key>timeStartedRecording</key>
-			<real>617251766.788432</real>
-			<key>timeStoppedRecording</key>
-			<real>617251766.78851998</real>
-			<key>title</key>
-			<string>Build target Masonry</string>
-			<key>uniqueIdentifier</key>
-			<string>367D13C2-52EC-4ED1-BF85-79488E43CC36</string>
-		</dict>
-		<key>3F6F83F5-37A6-423B-8421-A65CF9926B4A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.library.static</string>
-			<key>fileName</key>
-			<string>3F6F83F5-37A6-423B-8421-A65CF9926B4A.xcactivitylog</string>
+			<string>5227FFA2-A210-443F-A150-6E89B897D5C2.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,15 +54,43 @@
 			<key>signature</key>
 			<string>AFNetworking-bbbmnpgvrkfmmjgaqrufekqndaxt</string>
 			<key>timeStartedRecording</key>
-			<real>617251766.78813505</real>
+			<real>617252287.22170997</real>
 			<key>timeStoppedRecording</key>
-			<real>617251766.78826201</real>
+			<real>617252287.22186804</real>
 			<key>title</key>
 			<string>Build target AFNetworking</string>
 			<key>uniqueIdentifier</key>
-			<string>3F6F83F5-37A6-423B-8421-A65CF9926B4A</string>
+			<string>5227FFA2-A210-443F-A150-6E89B897D5C2</string>
 		</dict>
-		<key>4B4AA575-C0E0-4153-A229-7D1DC9F43D20</key>
+		<key>52396B89-AE6B-45AE-B17E-C2E7541D4622</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.library.static</string>
+			<key>fileName</key>
+			<string>52396B89-AE6B-45AE-B17E-C2E7541D4622.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>Masonry-bbbmnpgvrkfmmjgaqrufekqndaxt</string>
+			<key>timeStartedRecording</key>
+			<real>617252287.22204006</real>
+			<key>timeStoppedRecording</key>
+			<real>617252287.22214305</real>
+			<key>title</key>
+			<string>Build target Masonry</string>
+			<key>uniqueIdentifier</key>
+			<string>52396B89-AE6B-45AE-B17E-C2E7541D4622</string>
+		</dict>
+		<key>8BDF8985-C4EE-4531-AD3E-190A50F3215C</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -99,7 +99,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>4B4AA575-C0E0-4153-A229-7D1DC9F43D20.xcactivitylog</string>
+			<string>8BDF8985-C4EE-4531-AD3E-190A50F3215C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -110,13 +110,13 @@
 			<key>signature</key>
 			<string>ZhiHu-dqqhwewizebzbocoyhovraxbvxss</string>
 			<key>timeStartedRecording</key>
-			<real>617251766.38915396</real>
+			<real>617252285.72431397</real>
 			<key>timeStoppedRecording</key>
-			<real>617251766.78614104</real>
+			<real>617252286.04639006</real>
 			<key>title</key>
 			<string>Build target ZhiHu</string>
 			<key>uniqueIdentifier</key>
-			<string>4B4AA575-C0E0-4153-A229-7D1DC9F43D20</string>
+			<string>8BDF8985-C4EE-4531-AD3E-190A50F3215C</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
